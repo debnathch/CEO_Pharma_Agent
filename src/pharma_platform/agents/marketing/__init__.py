@@ -1,0 +1,3 @@
+from pharma_platform.agents.marketing.agent import MarketingAgent
+
+__all__ = ["MarketingAgent"]
