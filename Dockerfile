@@ -27,7 +27,7 @@ COPY pyproject.toml README.md ./
 COPY src/ ./src/
 COPY apps/ ./apps/
 COPY tests/ ./tests/
-COPY data/ ./data/
+RUN mkdir -p /app/data
 
 # Copy compiled React frontend assets from Stage 1
 COPY --from=frontend-builder /web/dist /app/apps/web/dist
